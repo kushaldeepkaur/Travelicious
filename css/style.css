@@ -1,0 +1,262 @@
+body
+{
+  font: 1rem/1.2 sans-serif,helvetica, georgia, verdana ,times;
+  background-color: #f5f5f0;
+}
+/*Global*/
+.container
+{
+    width: 80%;
+    overflow: hidden;
+    margin: auto;
+}
+button
+{
+  background-color: #FFEB3B;
+  border: none;
+  width:80px;
+  height: 35px;
+  font-weight: bold;
+}
+.theme
+{
+  background-color: #808080;
+  color: white;
+  padding: 10px;
+  margin: 10px;
+}
+/*header*/
+header
+{
+  background-color: #388E3C;
+  color: #000000;
+  border-bottom: #FFEB3B solid 0.2rem;
+}
+/*header nav option links*/
+header a
+{
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+ul
+{
+  margin: 0;
+  padding: 0;
+}
+/*nav list options*/
+header li
+{
+  display: inline;
+  float: left;
+  padding-right: 1em ;
+}
+/*for the complete nav bar using float:right*/
+header nav
+{
+  float: right;
+  margin-top: 2rem;
+}
+/* For the Travelicious*/
+header #logo
+{
+  margin-top: 0.7em;
+  float: left;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+/*for highlighting travel in travelicious and current class for home highlight*/
+header .highlight, header .current a
+{
+  color: #ffff1a;
+  font-weight: bold;
+}
+header a:hover
+{
+  color: #E65100;
+  font-weight: bold;
+}
+/*for background for jumbotron*/
+#show
+{
+  background: url("../img/cover.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  background-position: 0 -40px;
+  min-height: 20rem;
+  text-align: center;
+  color: white;
+}
+#show h1
+{
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+#show p
+{
+  color: #000000;
+  font-weight: bolder;
+  font-size: 20px;
+}
+/*newsletter subsription*/
+ #newsletter
+{
+  background-color:#388E3C;
+  border-top: #FFEB3B solid 0.2rem;
+  border-bottom: #FFEB3B solid 0.2rem;
+}
+ #newsletter h1
+{
+  margin-top: 2rem;
+  float: left;
+  margin-bottom: 2rem;
+}
+ #newsletter form
+{
+  margin-top: 2rem;
+  float: right;
+  margin-bottom: 2rem;
+
+}
+ #newsletter input[type="email"]
+{
+  height: 25px;
+  width: 150px;
+}
+/*for 3 image boxes*/
+#boxes
+{
+  margin: 2em 5em 2em 5em;
+}
+.box
+{
+  float: left;
+  text-align: center;
+  padding: 10px;
+}
+#main-col
+{
+  float: left;
+  width:60%;
+}
+#side
+{
+  float: right;
+  width:30%;
+}
+#services li
+{
+  border: solid 1px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #e6e6e6;
+}
+form#suggestion
+{
+  margin-top: 90px;
+  min-width:30%;
+  min-height:30%;
+}
+#suggestion label,#suggestion h2
+{
+  text-align: center;
+  color: black;
+  font-weight: bold;
+}
+#suggestion textarea ,input
+{
+  padding: 5px;
+  margin: 5px;
+}
+#suggestion button, #suggestion input, #suggestion textarea
+{
+  width: 90%;
+  padding: 10px;
+  overflow: hidden;
+}
+/*footer*/
+footer
+{
+  border-top: #FFEB3B solid 0.2rem;
+  background-color: #388E3C;
+  height: 130%;
+  text-align: center;
+  font-weight: bold;
+}
+/*media querries*/
+@media only screen and (min-width:266px) and (max-width:768px)
+{
+  header .brand, header #logo
+  ,header nav, header nav li,
+  #newsletter h1, #newsletter form , #boxes, .box,
+  article#main-col, aside#side, aside#suggestion
+   {
+  float: none;
+  text-align: center;
+  width:100%;
+  margin: auto;
+    }
+    header #logo
+    {
+      font-size: 0.7em;
+    }
+  header
+  {
+    padding-bottom: 15px;
+  }
+  #newsletter h1
+  {
+    margin: 10px;
+  }
+  #newsletter form input[type="email"], .button_1
+  {
+    float: none;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  #show h1
+  {
+    font-size: 40px;
+    overflow: hidden;
+  }
+  #show p
+  {
+    font-size: inherit;
+  }
+  article#main-col
+  {
+    min-height: 100%;
+    display:block;
+  }
+  form#suggestion
+  {
+    margin: 20px 0 20px 0;
+  }
+}
+/*for 3 image boxes*/
+@media only screen and (min-width: 769px) and (max-width: 1208px)
+{
+  .box
+  {
+    float:none;
+    display: block;
+    margin: auto;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+  }
+}
+@media only screen and (min-width: 1209px) and (max-width: 1368px)
+{
+  #boxes
+  {
+    margin: 2em 0.5em 2em 0.5em;
+  }
+  .box
+  {
+    float: left;
+    text-align: center;
+    padding: 0.5em;
+  }
+}
